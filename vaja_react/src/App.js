@@ -9,7 +9,7 @@ function App() {
     destrukcija polja useState (object destructuring)
     setSeznam;  funkcija, ki nam dopušča, da updejtamo nas Seznam
     naloge vsebuje vse kaj je v useStatu na desni strani (vsaka naloga, ki bo v seznamu - desna stran)
-    ---------------
+    ----------------
     props: npr <Avtor novo={Ime} /> implementirano - GLEJ SPODAJ
     v komponenti imamo isto poimenovanje spremenljivke kot smo imeli zgoraj, torej ime const Avtor = ({novo}) => {}
     {id: 1, ime: "Naloga 1", koncana: false}, {id: 2, ime: "Naloga 2", koncana: false}
