@@ -58,11 +58,19 @@ function App() {
         nalogaRef.current.value = null;
     }
 
+    const izberiNalogo = (id) => {
+        const nove_naloge = [...naloge];
+        const naloga = nove_naloge.find(naloga => naloga.id === id)
+        naloga.koncana = !naloga.koncana;
+        setSeznam(nove_naloge);
+
+    }
+
     return (
       <>
         <h1>Naslov</h1>
         <h2>Naslov 2</h2>
-          <Seznam prop={naloge}/>
+          <Seznam prop={naloge} izbranaNal={izberiNalogo}/>
           <span>Dodaj seznam: </span>
           <input ref={nalogaRef} type="text" />
           <button onClick={dodajNalogo} >Dodaj nalogo</button>

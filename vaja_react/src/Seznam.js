@@ -4,7 +4,7 @@ import Naloga from "./Naloga";
 komponente zmeraj pisi z veliko zacetnico
 react bo "komponente" z malo zacetnico obravnaval kot DOM tage npr <div> </div>
  */
-const Seznam = ({prop}) => {
+const Seznam = ({prop, izbranaNal}) => {
 
     /*
     javascript pozna gnezdene funkcije; lahko jih pišemo kot arrow funkcije
@@ -28,7 +28,7 @@ const Seznam = ({prop}) => {
                 zmeraj moramo imeti key - kakršnokoli unikatno vrednost
                  */
                 prop.map(naloga => {
-                    return <Naloga key={naloga.id} izbrana={naloga}/>;
+                    return <Naloga key={naloga.id} izbrana={naloga} izbranaNal={izbranaNal}/>;
                 })
             }
         </>

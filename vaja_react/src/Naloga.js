@@ -1,13 +1,17 @@
 import React from "react";
 
-const Naloga = ({ izbrana }) => {
+const Naloga = ({ izbrana, izbranaNal }) => {
+
+    const nalogaKlik = () => {
+        izbranaNal(izbrana.id);
+    }
 
     return(
         <>
             <p>
                 <label>
                     {izbrana.ime}
-                    <input type="checkbox" checked={izbrana.koncana}/>
+                    <input type="checkbox" checked={izbrana.koncana} onChange={nalogaKlik}/>
                 </label>
 
             </p>
