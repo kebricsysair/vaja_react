@@ -18,6 +18,6 @@ public class BackendApplication implements CommandLineRunner {
 	@java.lang.Override
 	public void run(java.lang.String... args) throws Exception {
 
-		template.update("INSERT INTO Uporabnik(Ime, Priimek, Starost) VALUES ('Klara', 'Kebric', 20)");
+		template.update("INSERT INTO uporabnik(Ime, Priimek, Starost) VALUES ('Klara', 'Kebric', 20)");
 	}
 }
